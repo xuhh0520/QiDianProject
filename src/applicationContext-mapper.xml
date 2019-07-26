@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd				
+						http://www.springframework.org/schema/context 
+						http://www.springframework.org/schema/context/spring-context.xsd">
+  
+	<!-- 加载db.properties文件 -->
+	<context:property-placeholder location="classpath:db.properties" />
+	<!-- 配置数据源 -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${dbdriver}"></property>
+		<property name="url" value="${dburl}"></property>
+		<property name="username" value="${dbusername}"></property>
+		<property name="password" value="${dbpassword}"></property>
+	</bean>
+	<!-- 配置连接池 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- setter注入数据源 -->
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- 加载mybatis全局配置文件 -->
+		<property name="configLocation" value="classpath:SqlMapConfig.xml"></property>
+	</bean>
+	<!-- mapper扫描:mapper接口的名字(.java)和mapper映射文件（.xml）的名字一致 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!-- 扫描包的路径，需要扫描多个包 -->
+		<property name="basePackage" value="com.minedu.model.mapper"></property>
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+	</bean>
+</beans>
+
+
+
+
+
+
+
