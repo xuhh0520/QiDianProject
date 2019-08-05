@@ -1,0 +1,100 @@
+#H2{
+	position: absolute;
+	left: 230px;
+	top: 28px;
+}
+#H3>p{
+	font-size: 25px;
+	position: absolute;
+	left: 270px;
+	top: 7px;
+}
+.D{
+	text-align: center;
+	margin-top: 60px;
+	
+}
+.D span i{
+	display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	margin: -4px 7px 0 0;
+	border-radius:100% ;
+	color: white;
+	background-color: red;
+	font: 16px/24px FZZCYSK;
+	text-align: center;
+
+	
+}
+.D span .G {
+   display: inline-block;
+	vertical-align: middle;
+	width: 24px;
+	height: 24px;
+	margin: -4px 7px 0 0;
+	border-radius:100% ;
+	background-color: #BFBFBF;
+	font: 16px/24px FZZCYSK;
+	text-align: center;
+    color: white;
+}
+.F{
+	padding-left: 80px;
+}
+hr{
+	width: 1200px;
+}
+.mid{
+	width: 149px;
+	border: 1px solid #ED4259;
+    height: 25px;
+    
+}
+.I{
+	position: relative;
+	left: 430px;
+	
+	
+}
+.I_1{
+	position: relative;
+	left: 445px;
+	padding-top: 30px;
+	
+}
+.mid_1{
+	width: 149px;
+	border: 1px solid #ED4259;
+    height: 25px;
+    
+}
+.I_2{
+	position: relative;
+	left: 460px;
+	padding-top: 30px;
+}
+.mid_2{
+	width: 260px;
+	border: 1px solid #ED4259;
+    height: 25px;
+}
+.I_3{
+	position: relative;
+	left: 445px;
+	padding-top: 30px;
+}
+.U{
+	position: relative;
+	left:150px;
+	top: 30px;
+}
+#button1{
+	background-color: red;
+	width: 300px;
+	height: 35px;
+	position: relative;
+	left:30px ;
+	color: white;
+}
