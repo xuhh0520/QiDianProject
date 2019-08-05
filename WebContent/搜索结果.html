@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/layui.css" />
+		<link rel="stylesheet" href="css/一级分类.css" />
+		<link rel="stylesheet" type="text/css" href="css/条件筛选.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js" ></script>
+		<script type="text/javascript" src="layui.js" ></script>
+		<script type="text/javascript" src="js/条件筛选.js" ></script>
+		
+		<title>搜索结果</title>
+	</head>
+	<body>
+	<div id="div1">
+	<div id="div1_1">
+    <ul class="layui-nav" lay-filter="" >
+      <li class="layui-nav-item"><a href="">暖瞄中文网</a></li>
+      <li class="layui-nav-item "><a href="">玄幻</a></li>
+      <li class="layui-nav-item"><a href="">都市</a></li>
+      <li class="layui-nav-item"><a href="">仙侠</a></li>
+      <li class="layui-nav-item"><a href="">科幻</a></li>
+      <li class="layui-nav-item"><a href="">游戏</a></li>
+      <li class="layui-nav-item"><a href="">排行</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">更多</a>
+        <dl class="layui-nav-child"> <!-- 二级菜单 -->
+          <dd><a href="">全部作品</a></dd>
+          <dd><a href="">历史</a></dd>
+          <dd><a href="">奇幻</a></dd>
+          <dd><a href="">武侠</a></dd>
+          <dd><a href="">悬疑</a></dd>
+          <dd><a href="">军事</a></dd>
+          <dd><a href="">现实</a></dd>
+          <dd><a href="">体育</a></dd>
+        </dl>
+      </li>
+      </ul>
+      </div>
+      <div id="div1_2">
+      <ul class="layui-nav" lay-filter="" >
+       <li class="layui-nav-item">
+
+       <input type="text" name="title" required  lay-verify="required" placeholder="请输入书名" class="layui-input"> 
+      </li>
+      <li  class="layui-nav-item">
+      	<a href=""><i class="layui-icon layui-icon-search " style="font-size: 25px; "></i> </a>
+      </li>
+
+    <!--  <li class="layui-nav-item">
+        <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+        <dl class="layui-nav-child">
+          <dd><a href="javascript:;">修改信息</a></dd>
+          <dd><a href="javascript:;">退出登陆</a></dd>
+        </dl>
+      </li>-->
+      <li class="layui-nav-item">
+        <a href="">登录</a>
+      </li>
+
+      <li class="layui-nav-item">
+        <a href="">我的书架<span class="layui-badge-dot"></span></a>
+      </li>
+    </ul>
+    </div>
+	</div>
+	<div id="div2" style="height: 120px;width: 100%; display: inline-block;">
+		<div id="div2_1" >
+			<img src="images/logo.png" class="qh">
+		</div>
+		<div id="div2_2">
+			<input type="text" class="input" /><i class="layui-icon layui-icon-search "  style="font-size: 40px; color: white; background-color: darkred; "></i>
+		</div>	
+	</div>
+	
+	
+	<div class="sousuo clearfix">
+		<h3 style="display: inline-block; float: left; margin-top: 7px;margin-right: 10px;">已选</h3>
+     <div class="select-result clearfix">
+	    <ul>
+	    	
+	    </ul>
+     </div>
+    </div>
+	
+	<div class="sx_updown clearfix">
+	<div class="content">
+		<div class="updown_box w136">
+			<h2 style="padding: 0;">全部</h2>
+		</div>
+		<div class="updown_box w290">
+			<h2>分类</h2>
+			<ul id="select2">
+				<li><a href="javascript:;">玄幻</a></li>
+				<li><a href="javascript:;">游戏</a></li>
+				<li><a href="javascript:;">都市</a></li>
+				<li><a href="javascript:;">仙侠</a></li>
+				<li><a href="javascript:;">科幻</a></li>
+				<li><a href="javascript:;">体育</a></li>
+				<li><a href="javascript:;">悬疑</a></li>
+				<li><a href="javascript:;">现实</a></li>
+				<li><a href="javascript:;">历史</a></li>
+				<li><a href="javascript:;">奇幻</a></li>
+				<li><a href="javascript:;">武侠</a></li>
+				<li><a href="javascript:;">军事</a></li>			
+			</ul>
+		</div>
+		<div class="updown_box w160">
+			<h2>状态</h2>
+			<ul id="select1">
+				<li ><a href="javascript:;">连载</a></li>
+				<li ><a href="javascript:;">完结</a></li>				
+			</ul>
+		</div>
+		<div class="updown_box w160">
+			<h2>字数</h2>
+			<ul id="select3">
+				<li><a href="javascript:;">1~50万字</a></li>
+				<li><a href="javascript:;">50~100万字</a></li>
+				<li><a href="javascript:;">100~150万字</a></li>
+				<li><a href="javascript:;">150~200万字</a></li>
+				<li><a href="javascript:;">200万字以上</a></li>				
+			</ul>
+		</div>
+	</div>
+    </div>
+        <div style="float: left;margin-left: 80px;width: 1263px; display: flex;border-bottom:solid 1px #d8d8d8 ; ">
+    		<div style="display: flex; margin-right: 10px; margin-left: 3px;padding-bottom: 20px; padding-top: 20px;  width: 631.5px;">
+				<div class="c4_1" style="margin-right: 10px; ">
+					<a href=""><img src="images/9.jpg" /> </a>
+				</div>
+				<div class="c4_2" style="width: 350px; height: 200px; ">
+					<ul>
+					       <li><a href="" style="font-size: 20px; font-weight: 700;">书名</a></li>
+					       <li><a  href="" style=" color: #d8d8d8; " >作者</a>&nbsp;<a  href="" style=" color: #d8d8d8; " >分类</a>&nbsp;<span  style=" color: #d8d8d8; " >状态</span></li>
+					       <li style="height: 120px;">简介</li>					       
+					</ul>
+				</div>
+				<div ">
+				    <ul >
+				    	<li><span style="height: 40px;line-height: 40px;">总收藏数</span></li>
+				    	<li><span style="height: 40px;line-height: 40px;">总字数</span></li>
+				    	<li style="height: 60px; line-height: 60px;"><button style="height: 30px;width: 80px;line-height: 30px;background-color: darkred;color: white;border: none;">书籍详情</button></li>
+				    	<li style="height: 60px;"><button style="height: 30px;width: 80px;line-height: 30px;background-color: darkred;color: white;border: none;">加入书架</button></li>
+				    </ul>
+				</div>
+			</div>
+			<div style="display: flex; margin-right: 10px; margin-left: 3px;padding-bottom: 20px; padding-top: 20px;  width: 631.5px;">
+				<div class="c4_1" style="margin-right: 10px; ">
+					<a href=""><img src="images/9.jpg" /> </a>
+				</div>
+				<div class="c4_2" style="width: 350px; height: 200px; ">
+					<ul>
+					       <li><a href="" style="font-size: 20px; font-weight: 700;">书名</a></li>
+					        <li><a  href="" style=" color: #d8d8d8; " >作者</a>&nbsp;<a  href="" style=" color: #d8d8d8; " >分类</a>&nbsp;<span   style=" color: #d8d8d8; " >状态</span></li>
+					       <li style="height: 120px;">简介</li>
+					      
+					</ul>
+				</div>
+				<div ">
+				    <ul >
+				    	<li><span style="height: 40px;line-height: 40px;">总收藏数</span></li>
+				    	<li><span style="height: 40px;line-height: 40px;">总字数</span></li>
+				    	<li style="height: 60px; line-height: 60px;"><button style="height: 30px;width: 80px;line-height: 30px;background-color: darkred;color: white;border: none;">书籍详情</button></li>
+				    	<li style="height: 60px;"><button style="height: 30px;width: 80px;line-height: 30px;background-color: darkred;color: white;border: none;">加入书架</button></li>
+				    </ul>
+				</div>
+			</div>
+        </div>
+        <div style="float: left;margin-left: 80px;width: 1263px; display: flex;border-bottom:solid 1px #d8d8d8 ; ">
+    		<div style="display: flex; margin-right: 10px; margin-left: 3px;padding-bottom: 20px; padding-top: 20px;  width: 631.5px;">
+				<div class="c4_1" style="margin-right: 10px; ">
+					<a href=""><img src="images/9.jpg" /> </a>
+				</div>
+				<div class="c4_2" style="width: 350px; height: 200px; ">
+					<ul>
+					       <li><a href="" style="font-size: 20px; font-weight: 700;">书名</a></li>
+					       <li><a  href="" style=" color: #d8d8d8; " >作者</a>&nbsp;<a  href="" style=" color: #d8d8d8; " >分类</a>&nbsp;<span  style=" color: #d8d8d8; " >状态</span></li>
+					       <li style="height: 120px;">简介</li>					       
+					</ul>
+				</div>
+				<div ">
+				    <ul >
+				    	<li><span style="height: 40px;line-height: 40px;">总收藏数</span></li>
+				    	<li><span style="height: 40px;line-height: 40px;">总字数</span></li>
+				    	<li style="height: 60px; line-height: 60px;"><button style="height: 30px;width: 80px;line-height: 30px;background-color: darkred;color: white;border: none;">书籍详情</button></li>
+				    	<li style="height: 60px;"><button style="height: 30px;width: 80px;line-height: 30px;background-color: darkred;color: white;border: none;">加入书架</button></li>
+				    </ul>
+				</div>
+			</div>
+			<div style="display: flex; margin-right: 10px; margin-left: 3px;padding-bottom: 20px; padding-top: 20px;  width: 631.5px;">
+				<div class="c4_1" style="margin-right: 10px; ">
+					<a href=""><img src="images/9.jpg" /> </a>
+				</div>
+				<div class="c4_2" style="width: 350px; height: 200px; ">
+					<ul>
+					       <li><a href="" style="font-size: 20px; font-weight: 700;">书名</a></li>
+					        <li><a  href="" style=" color: #d8d8d8; " >作者</a>&nbsp;<a  href="" style=" color: #d8d8d8; " >分类</a>&nbsp;<span   style=" color: #d8d8d8; " >状态</span></li>
+					       <li style="height: 120px;">简介</li>
+					      
+					</ul>
+				</div>
+				<div ">
+				    <ul >
+				    	<li><span style="height: 40px;line-height: 40px;">总收藏数</span></li>
+				    	<li><span style="height: 40px;line-height: 40px;">总字数</span></li>
+				    	<li style="height: 60px; line-height: 60px;"><button style="height: 30px;width: 80px;line-height: 30px;background-color: darkred;color: white;border: none;">书籍详情</button></li>
+				    	<li style="height: 60px;"><button style="height: 30px;width: 80px;line-height: 30px;background-color: darkred;color: white;border: none;">加入书架</button></li>
+				    </ul>
+				</div>
+			</div>
+        </div>
+        
+<script type="text/javascript">
+$("#select1 li").click(function () {
+$(this).addClass("selected").siblings().removeClass("selected");
+var copyThisA = $(this).clone();
+//console.log(copyThisA);
+if ($("#selectA").length > 0) {
+$("#selectA a").html($(this).text());
+} else {
+$(".select-result ul").append(copyThisA.attr("id", "selectA"));
+}
+});
+$("#select2 li").click(function() {
+var type = $(this).attr("date-type");
+var copyThisB = $(this).clone();
+if ($(this).hasClass("selected")) {
+$(".select-result li[date-type='" + type + "']").fadeToggle();
+} else {
+$(".select-result ul").append(copyThisB);
+};
+$(this).toggleClass("selected");
+
+});
+$("#select3 li").click(function () {
+$(this).addClass("selected").siblings().removeClass("selected");
+var copyThisC = $(this).clone();
+if ($("#selectC").length > 0) {
+$("#selectC a").html($(this).text());
+} else {
+$(".select-result ul").append(copyThisC.attr("id", "selectC"));
+}
+});
+$("#selectA").live("click", function () {
+$(this).remove();
+$("#select1 li").removeClass("selected");
+});
+$(".select-result ul").delegate("li","click", function(){
+var type = $(this).attr("date-type");
+$(this).fadeOut();
+$("#select2 li[date-type='" + type + "']").removeClass("selected");
+});
+$("#selectC").live("click", function () {
+$(this).remove();
+$("#select3 li").removeClass("selected");
+});
+</script>
+	</body>
+</html>
