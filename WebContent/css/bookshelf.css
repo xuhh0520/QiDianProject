@@ -1,0 +1,10 @@
+body{
+	font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    width: 100vw;
+    min-width: 990px;
+    min-height: calc(100vh - 17px);
+    color: #3e3d43;
+    -webkit-font-smoothing: antialiased;
+}
