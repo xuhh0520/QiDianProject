@@ -21,7 +21,7 @@
             http://www.springframework.org/schema/aop/spring-aop.xsd">
    
  	<!-- 组件扫描：管理所有service类对象 --> 
-	<context:component-scan base-package="com.minedu.model.service"></context:component-scan>
+	<context:component-scan base-package="com.neuedu.model.service"></context:component-scan>
 	
 	<!-- 事务处理： -->
 	<!-- 配置事务处理器 -->
@@ -43,7 +43,7 @@
    	</tx:advice>
    	
    	<aop:config>
-		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.minedu.model.service.*.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut="execution(* com.neuedu.model.service.*.*(..))"/>
 	</aop:config>
 	
 </beans>

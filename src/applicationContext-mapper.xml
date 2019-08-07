@@ -27,7 +27,7 @@
 	<!-- mapper扫描:mapper接口的名字(.java)和mapper映射文件（.xml）的名字一致 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- 扫描包的路径，需要扫描多个包 -->
-		<property name="basePackage" value="com.minedu.model.mapper"></property>
+		<property name="basePackage" value="com.neuedu.model.mapper"></property>
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
 	</bean>
 </beans>

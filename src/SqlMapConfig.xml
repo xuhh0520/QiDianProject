@@ -12,7 +12,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	
 	<typeAliases>
 	
-		<package name="com.minedu.model.bean"/>
+		<package name="com.neuedu.model.bean"/>
 	</typeAliases>
 
 
