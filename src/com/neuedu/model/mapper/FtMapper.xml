@@ -19,6 +19,138 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         select * from novel where sid=(select sid from secondtype where fid=1)
     </select>
     
+    <select id="selectDushi1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=2)
+    </select> 
+    
+    <select id="selectDushi2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=2)
+    </select>
+    
+    <select id="selectDushi3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=2)
+    </select>
+    
+    <select id="selectJunshi1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=3)
+    </select> 
+    
+    <select id="selectJunshi2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=3)
+    </select>
+    
+    <select id="selectJunshi3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=3)
+    </select>
+    
+    <select id="selectKehuan1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=4)
+    </select> 
+    
+    <select id="selectKehuan2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=4)
+    </select>
+    
+    <select id="selectKehuan3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=4)
+    </select>
+    
+    <select id="selectLishi1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=5)
+    </select> 
+    
+    <select id="selectLishi2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=5)
+    </select>
+    
+    <select id="selectLishi3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=5)
+    </select>
+    
+    <select id="selectQihuan1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=6)
+    </select> 
+    
+    <select id="selectQihuan2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=6)
+    </select>
+    
+    <select id="selectQihuan3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=6)
+    </select>
+    
+    <select id="selectTiyu1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=7)
+    </select> 
+    
+    <select id="selectTiyu2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=7)
+    </select>
+    
+    <select id="selectTiyu3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=7)
+    </select>
+    
+    <select id="selectWuxia1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=8)
+    </select> 
+    
+    <select id="selectWuxia2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=8)
+    </select>
+    
+    <select id="selectWuxia3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=8)
+    </select>
+    
+    <select id="selectXianshi1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=9)
+    </select> 
+    
+    <select id="selectXianshi2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=9)
+    </select>
+    
+    <select id="selectXianshi3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=9)
+    </select>
+    
+    <select id="selectXianxia1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=10)
+    </select> 
+    
+    <select id="selectXianxia2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=10)
+    </select>
+    
+    <select id="selectXianxia3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=10)
+    </select>
+    
+    <select id="selectXuanyi1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=11)
+    </select> 
+    
+    <select id="selectXuanyi2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=11)
+    </select>
+    
+    <select id="selectXuanyi3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=11)
+    </select>
+    
+    <select id="selectYouxi1"  resultType="Novel">
+        select * from novel where sid in (select sid from secondtype where fid=12)
+    </select> 
+    
+    <select id="selectYouxi2"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=12)
+    </select>
+    
+    <select id="selectYouxi3"  resultType="Novel">
+        select * from novel where sid=(select sid from secondtype where fid=12)
+    </select>
+    
     
 	
 	
